@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSPre-AdvHomeWork6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-container">
+            <h1>Please, sign up</h1>
+            <form id="myForm">
+                <input type="text" id="firstName" placeholder="First Name">
+                <br>
+                <input type="text" id="lastName" placeholder="Last Name">
+                <br>
+                <input type="text" id="email" placeholder="Email address">
+                <br>
+                <div class="mail-exist exist">
+                    This email already exist
+                </div>
+                <input type="text" id="password" placeholder="Password">
+                <br>
+                <input type="button" onclick="submitBtn()" id="btn" name="sign" value="Sign Up">
+                <br>
+                <a class="aIn" onclick="signIn()" href="#">Sign In now</a>
+            </form>
+        </div>
+        <div class="sign-container">
+            <h1>Please, sign in</h1>
+            <form id="myForm2">
+                <input type="text" id="mail2" name="mail2" placeholder="Email address">
+                <br>
+                <input type="text" id="pass2" name="pass2" placeholder="Password">
+                <br>
+                <div class="mail-exist empty">
+                    Local storage is empty
+                </div>
+                <div class="mail-exist incorrect">
+                    Incorrect email or password
+                </div>
+                <input type="button" onclick="accSign()" id="signIn" name="signIn" value="Sign In">
+                <br>
+                <a class="aUp" onclick="signUp()" href="#">Sign Up now</a>
+            </form>
+        </div>
+        <div class="account">
+            <div class="acc">
+                <div class="account-avatar"></div>
+                <div class="account-name"></div>
+                <div class="account-mail"></div>
+                <div class="account-prof">Designer & Web Developing</div>
+                <div>________</div>
+            </div>
+            <input type="button" onclick="accSignIn()" id="signUp" name="signUp" value="Sign Up">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
